@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.noto-serif-jp-weight200 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.noto-serif-jp-weight900 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP", sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    max-width: 1280px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #666;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    line-height: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}

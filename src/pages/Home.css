@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.noto-serif-jp-weight200 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.noto-serif-jp-weight900 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.home-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero-section .overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+.about-section, .portfolio-section, .why-us-section, .contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px auto;
+}
+
+.about-section h2, .portfolio-section h2, .why-us-section h2, .contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p, .portfolio-section p, .why-us-section p, .contact-section p {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #666;
+}
+
+.contact-section p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.contact-button {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #333;
+}
+
+.portfolio-pictureframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.qualification-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.qualification-image {
+  max-width: 200px;
+  height: auto;
+}
+
+/* 一般PCのメディアクエリ */
+@media (max-width: 1920px) {
+  .home-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .portfolio-pictureframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* スマホとタブレット用のメディアクエリ */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .portfolio-section, .about-section, .why-us-section, .contact-section {
+    margin: 0 auto;
+  }
+
+  .portfolio-section h2, .about-section h2, .why-us-section h2, .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-section .portfolio-pictureframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 33%;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .about-section p, .contact-section p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .contact-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* スマホ用のメディアクエリ */
+@media (max-width: 768px) {
+  .home-container {
+    width: 90%;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 0.875rem;
+  }
+
+  .portfolio-pictureframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  .about-section {
+    margin-top: 32px;
+  }
+
+  .about-section, .portfolio-section {
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+
+  .contact-section {
+    margin-bottom: 128px;
+  }
+
+  
+  .about-section h2, .portfolio-section h2, .why-us-section h2, .contact-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section p, .portfolio-section p, .why-us-section p, .contact-section p {
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+  }
+
+  .contact-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}

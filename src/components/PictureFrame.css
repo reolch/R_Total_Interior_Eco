@@ -1,0 +1,47 @@
+.frame-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.frame {
+    padding: 10px;
+    border: 15px solid #73777A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #817D7B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame.landscape {
+    width: 240px;
+    height: 180px;
+}
+
+.frame.portrait {
+    width: 180px;
+    height: 240px;
+}
+
+.painting {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}

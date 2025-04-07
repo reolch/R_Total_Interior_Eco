@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.noto-serif-jp-weight200 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.noto-serif-jp-weight900 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.announcements-section {
+  max-width: 65%;
+  margin: 3rem auto;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.announcements-title {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.announcements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.announcement-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+}
+
+.announcement-date {
+  width: 80px;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+}
+
+.announcement-category {
+  width: auto;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 4px;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.announcement-title {
+  margin-left: 32px;
+  margin-right: 16px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.announcement-item:last-child {
+  border-bottom: none;
+}
+
+/* スマホ用のメディアクエリ */
+@media (max-width: 768px) {
+  .announcements-section {
+    display: none;
+  }
+}

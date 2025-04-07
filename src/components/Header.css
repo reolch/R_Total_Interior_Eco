@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.header {
+    background-color: #F5F5F7;
+    color: #000;
+    padding: 1rem;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* PC向けスタイル */
+.navbar {
+    width: 100%;
+    background-color: #F7F7F9;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* スマホとタブレット向けスタイル */
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .navbar a {
+        padding: 0.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+}
+
+/* PC向けハンバーガーメニュー非表示 */
+@media (min-width: 1025px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* リボンスタイル */
+.ribbon-drop-wrapper {
+    height: 45px;
+    width: 100%;
+    padding: 16px auto;
+    background-color: #F7F7F9;
+    text-align: center;
+}
+
+.ribbon-content-wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: auto;
+}
+
+.ribbon-content-wrapper a {
+    color: #000;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* モバイル向けスタイル強化 */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar li {
+        margin: 0.3rem 0;
+    }
+
+    .ribbon-content-wrapper a {
+        font-size: 0.8rem;
+    }
+
+    .hamburger {
+        top: 12px;
+        right: 0px;
+    }
+
+    .hamburger .bar {
+        width: 20px;
+        height: 2px;
+    }
+}

@@ -12,7 +12,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.totalinterioreco.com" />
     <meta property="og:image" content="https://www.totalinterioreco.com/og-image.jpg" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://discord.com https://discord.com/api/webhooks;">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://ssgform.com https://discord.com https://discord.com/api/webhooks; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>

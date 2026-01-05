@@ -17,17 +17,50 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch('https://ssgform.com/s/4UAKkh6GcwCC', {
+      // Discord Webhookに送信
+      const discordPayload = {
+        content: '🔔 **新しいお問い合わせがあります**',
+        embeds: [
+          {
+            title: 'お問い合わせ内容',
+            color: 3447003, // 青色
+            fields: [
+              {
+                name: '👤 お名前',
+                value: formData.name || '未入力',
+                inline: true
+              },
+              {
+                name: '📧 メールアドレス',
+                value: formData.email || '未入力',
+                inline: true
+              },
+              {
+                name: '💬 メッセージ',
+                value: formData.message || '未入力',
+                inline: false
+              }
+            ],
+            timestamp: new Date().toISOString()
+          }
+        ]
+      };
+
+      const response = await fetch('https://discord.com/api/webhooks/1457835944580354118/dS89uWObB5SqR4_tYn1OUx8xSyk5b5Si2IDNm4iB_-YKFzZ-3Pi1te0iXAlbKE3B4jQZ', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(discordPayload)
       });
       
       if (response.ok) {
         setMessage('送信が完了しました。');
+        // フォームをリセット
+        event.target.reset();
       } else {
+        const errorText = await response.text();
+        console.error('Discord API Error:', errorText);
         throw new Error('送信に失敗しました');
       }
     } catch (error) {
